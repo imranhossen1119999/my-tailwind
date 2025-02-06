@@ -2,7 +2,7 @@ import React from "react";
 
 const Bussiness = () => {
     return(
-            <div className="bg-[#4A2DBF] min-h-screen flex flex-col md:flex-row items-start md:items-center justify-center text-white font-sans">
+            <div className="bg-[#fff] min-h-screen flex flex-col md:flex-row items-start md:items-center justify-center text-black font-sans">
 <div className="md:w-1/2 px-8 py-12 md:px-16 md:py-20">
   <h2 className="text-3xl font-bold mb-6">How Mobionizer Helps Your Business</h2>
   <div className="space-y-6">
