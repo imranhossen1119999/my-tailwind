@@ -2,15 +2,14 @@ import React from "react";
 
 const Bussiness = () => {
     return(
-            <div className="bg-[#fff] min-h-screen flex flex-col md:flex-row items-start md:items-center justify-center text-black font-sans">
-<div className="md:w-1/2 px-8 py-12 md:px-16 md:py-20">
-  <h2 className="text-3xl font-bold mb-6">How Mobionizer Helps Your Business</h2>
-  <div className="space-y-6">
-    <div className="flex items-start">
-      <div className="bg-orange-500 rounded-full h-10 w-10 flex items-center justify-center mr-4">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 0a6 6 0 00-6 6v1.5m6-1.5V5.625m0 13.125a6 6 0 01-6-6v-1.5m6 0a6 6 0 016 6v1.5" />
-        </svg>
+        <div className="bg-[#fff] min-h-screen flex flex-col md:flex-row items-start md:items-center justify-center text-black font-sans">
+            <div className="container flex">
+        <div className="md:w-1/2 px-8 py-12 md:px-16 md:py-20 ">
+        <h2 className="text-3xl font-bold mb-6">How Mobionizer Helps Your Business</h2>
+        <div className="space-y-10 ">
+            <div className="flex items-start">
+            <div className=" h-14 w-10 flex items-center justify-center mr-4">
+            <img src="../../src/assets/How Mobionizer/Data Security.png" alt="data-security" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-white" />
       </div>
       <div>
         <h3 className="text-xl font-semibold mb-2">Data Security</h3>
@@ -18,10 +17,8 @@ const Bussiness = () => {
       </div>
     </div>
     <div className="flex items-start">
-      <div className="bg-red-500 rounded-full h-10 w-10 flex items-center justify-center mr-4">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
+      <div className=" h-14 w-10 flex items-center justify-center mr-4">
+      <img src="../../src/assets/How Mobionizer/Easy Device Enrollment.png" alt="easy-device" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-white" />
       </div>
       <div>
         <h3 className="text-xl font-semibold mb-2">Easy Device Enrollment</h3>
@@ -29,10 +26,8 @@ const Bussiness = () => {
       </div>
     </div>
     <div className="flex items-start">
-      <div className="bg-yellow-500 rounded-full h-10 w-10 flex items-center justify-center mr-4">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
+      <div className=" h-14 w-10 flex items-center justify-center mr-4">
+      <img src="../../src/assets/How Mobionizer/Real-time Geolocation Tracking.png" alt="real-time" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-white" />
       </div>
       <div>
         <h3 className="text-xl font-semibold mb-2">Real-time Geolocation Tracking</h3>
@@ -40,10 +35,8 @@ const Bussiness = () => {
       </div>
     </div>
     <div className="flex items-start">
-      <div className="bg-green-500 rounded-full h-10 w-10 flex items-center justify-center mr-4">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
+      <div className=" h-14 w-10 flex items-center justify-center mr-4">
+      <img src="../../src/assets/How Mobionizer/Browsing Control.png" alt="browsing-control" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-white" />
       </div>
       <div>
         <h3 className="text-xl font-semibold mb-2">Browsing Control</h3>
@@ -51,10 +44,8 @@ const Bussiness = () => {
       </div>
     </div>
     <div className="flex items-start">
-      <div className="bg-blue-500 rounded-full h-10 w-10 flex items-center justify-center mr-4">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
+      <div className=" h-14 w-10 flex items-center justify-center mr-4">
+        <img src="../../src/assets/How Mobionizer/IT Empowerment.png" alt="it-empowerment" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-white" />
       </div>
       <div>
         <h3 className="text-xl font-semibold mb-2">IT Empowerment</h3>
@@ -62,10 +53,8 @@ const Bussiness = () => {
       </div>
     </div>
     <div className="flex items-start">
-      <div className="bg-purple-500 rounded-full h-10 w-10 flex items-center justify-center mr-4">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
+      <div className=" h-14 w-10 flex items-center justify-center mr-4">
+      <img src="../../src/assets/How Mobionizer/Comprehensive Reports.png" alt="comprehensive-report" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-white" />
       </div>
       <div>
         <h3 className="text-xl font-semibold mb-2">Comprehensive Reports</h3>
@@ -75,26 +64,40 @@ const Bussiness = () => {
   </div>
 </div>
 {/* Right Side (Form) */}
-<div className="md:w-1/2 bg-white text-gray-800 px-8 py-12 md:px-16 md:py-20">
-  <div className="max-w-md mx-auto">
-    <h2 className="text-2xl font-bold mb-6 text-center">Register For Free Trial - 1$ <br /> For Each Device</h2>
-    <form className="space-y-4">
-      <div>
-        <input type="text" className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter Your Name..." />
-      </div>
-      <div>
-        <input type="email" className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Email Address" />
-      </div>
-      <div>
-        <input type="tel" className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Phone No" />
-      </div>
-      <div>
-        <input type="text" className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Job Title" />
-      </div>
-      <div>
-        <input type="text" className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder='' />
-      </div>
+<div className="md:w-1/2 bg-[#4A2DBF] text-gray-800 px-8 py-12 rounded-3xl border-white md:px-16 md:py-20 relative -top-28">
+<div className="absolute ">
+  <div className="max-w-xl mx-auto ">
+    <h2 className="text-3xl font-bold mb-6 text-center text-white">Register For Free Trial - 1$ <br /> For Each Device</h2>
+    <form className="space-y-10">
+    <div>
+       <input type="text" className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter Your Name..." required />
+          </div>
+          <div>
+            <input type="email" className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Email Address" required />
+          </div>
+          <div>
+            <input type="tel" className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Phone No" required />
+          </div>
+          <div>
+            <input type="text" className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Job Title" required />
+          </div>
+          <div>
+            <input type="text" className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Company" required />
+          </div>
+          <div className="text-center">
+            <button type="submit" className="bg-[#F26A25] text-white font-bold py-3 px-16 mt-9 rounded-3xl hover:bg-[#e65811] transition duration-300">
+              Submit
+            </button>
+          </div>
   </form>
+  <div className="mt-6 text-xl">
+    <p className="text-white text-2xl mt-14">*At Mobionizer, we're dedicated to simplifying mobile device management while ensuring top-notch security and efficiency.
+    Join us in streamlining your device management process today!
+    </p>
+    
+</div>
+  </div>
+  </div>
   </div>
   </div>
 </div>
