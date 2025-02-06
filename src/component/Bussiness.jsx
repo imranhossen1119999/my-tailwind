@@ -99,6 +99,7 @@ const Bussiness = () => {
   </div>
   </div>
   </div>
+  <hr />
   </div>
 </div>
     )
