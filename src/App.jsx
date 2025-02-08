@@ -12,7 +12,7 @@ import MobionizerBanner from "./component/MobionizerBanner";
 
 function App() {
   return (
-    <div>
+    <div className="bg-gray-50">
       <LandingPage />
       <Bussiness />
       <CompanyLogo />

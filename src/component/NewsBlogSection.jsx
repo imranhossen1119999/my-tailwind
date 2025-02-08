@@ -2,7 +2,7 @@ import React from "react";
 
 const NewsBlogSection = () => {
     return(
-        <div className="bg-gray-50 py-16 px-6 md:px-16 flex flex-col md:flex-row items-center">
+        <div className="bg-gray-50 py-6 md:py-16 px-6 md:px-16 flex flex-col md:flex-row items-center">
 
       {/* Left Section */}
       <div className="w-full md:w-1/3">

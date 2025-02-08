@@ -26,7 +26,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className=" bg-blue-900 text-white py-10 px-4 flex flex-col items-center">
+    <div className=" bg-blue-900 text-white py-10 flex flex-col items-center md:px-16 px-6">
       <div className="container">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       <div className="text-center mb-10">
