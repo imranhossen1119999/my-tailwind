@@ -6,6 +6,8 @@ import ChooseMobionizer from "./component/chooseMobionizer";
 import Testimonials from "./component/Testimonials";
 import ContactSection from "./component/ContactSection";
 import ContactForm from "./component/ContactForm";
+import NewsBlogSection from "./component/NewsBlogSection";
+import MobionizerBanner from "./component/MobionizerBanner";
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
       <Testimonials />
       <ContactSection />
       <ContactForm />
+      <NewsBlogSection />
+      <MobionizerBanner />
     </div>
   )
 }
