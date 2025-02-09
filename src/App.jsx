@@ -1,8 +1,9 @@
 import "./App.css";
+import { ToastContainer } from 'react-toastify';
 import LandingPage from "./component/LandingPage";
 import Bussiness from './component/Bussiness'
 import CompanyLogo from "./component/CompanyLogo";
-import ChooseMobionizer from "./component/chooseMobionizer";
+import ChooseMobionizer from "./component/ChooseMobionizer";
 import Testimonials from "./component/Testimonials";
 import ContactSection from "./component/ContactSection";
 import ContactForm from "./component/ContactForm";
@@ -22,6 +23,7 @@ function App() {
       <ContactForm />
       <NewsBlogSection />
       <MobionizerBanner />
+      <ToastContainer />
     </div>
   )
 }

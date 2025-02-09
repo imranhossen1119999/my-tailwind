@@ -1,6 +1,14 @@
 import React, { useState } from "react";
+import { toast } from 'react-toastify';
 import emailjs from "emailjs-com";
+import security from "../assets/How Mobionizer/Data Security.png"
+import Enrollment from "../assets/How Mobionizer/Easy Device Enrollment.png"
+import Tracking from "../assets/How Mobionizer/Real-time Geolocation Tracking.png"
+import Control from "../assets/How Mobionizer/Browsing Control.png"
+import Empowerment from "../assets/How Mobionizer/IT Empowerment.png"
+import Reports from "../assets/How Mobionizer/Comprehensive Reports.png"
 const Bussiness = () => {
+  const [loadding, setLoadding] = useState(false)
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -13,6 +21,7 @@ const Bussiness = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoadding(true)
     emailjs
       .send(
         "service_inohyzo", // Replace with your EmailJS Service ID
@@ -22,9 +31,10 @@ const Bussiness = () => {
       )
       .then(
         (response) => {
+          setLoadding(false)
+          toast.success("Email sent successfully!")
           console.log("Email sent successfully!", response);
-          alert("Message sent successfully!");
-          setDatauseState({
+          setData({
             name: "",
             email: "",
             phone: "",
@@ -33,8 +43,9 @@ const Bussiness = () => {
           })
         },
         (error) => {
+          setLoadding(false)
+          toast.error("Failed to send message. Please try again.")
           console.error("Failed to send email:", error);
-          alert("Failed to send message. Please try again.");
         }
       );
   };
@@ -46,7 +57,7 @@ const Bussiness = () => {
           <div className="space-y-4">
             <div className="flex items-start">
               <div className="flex items-center justify-center w-[50px] h-[50px] mr-3">
-                <img src="../../src/assets/How Mobionizer/Data Security.png" alt="data-security" strokeWidth={1.5} stroke="currentColor" className="w-[40px] h-[40px] mx-auto" />
+                <img src={security} alt="data-security" strokeWidth={1.5} stroke="currentColor" className="w-[40px] h-[40px] mx-auto" />
               </div>
               <div>
                 <h3 className="text-[18px] font-semibold">Data Security</h3>
@@ -55,7 +66,7 @@ const Bussiness = () => {
             </div>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-[50px] h-[50px] mr-3">
-                <img src="../../src/assets/How Mobionizer/Easy Device Enrollment.png" alt="easy-device" className="w-[40px] h-[40px] mx-auto" />
+                <img src={Enrollment} alt="easy-device" className="w-[40px] h-[40px] mx-auto" />
               </div>
               <div>
                 <h3 className="text-[18px] font-semibold">Easy Device Enrollment</h3>
@@ -64,7 +75,7 @@ const Bussiness = () => {
             </div>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-[50px] h-[50px] mr-3">
-                <img src="../../src/assets/How Mobionizer/Real-time Geolocation Tracking.png" alt="real-time" strokeWidth={1.5} stroke="currentColor" className="w-[40px] h-[40px] mx-auto" />
+                <img src={Tracking} alt="real-time" strokeWidth={1.5} stroke="currentColor" className="w-[40px] h-[40px] mx-auto" />
               </div>
               <div>
                 <h3 className="text-[18px] font-semibold">Real-time Geolocation Tracking</h3>
@@ -73,7 +84,7 @@ const Bussiness = () => {
             </div>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-[50px] h-[50px] mr-3">
-                <img src="../../src/assets/How Mobionizer/Browsing Control.png" alt="browsing-control" strokeWidth={1.5} stroke="currentColor" className="w-[40px] h-[40px] mx-auto" />
+                <img src={Control} alt="browsing-control" strokeWidth={1.5} stroke="currentColor" className="w-[40px] h-[40px] mx-auto" />
               </div>
               <div>
                 <h3 className="text-[18px] font-semibold">Browsing Control</h3>
@@ -82,7 +93,7 @@ const Bussiness = () => {
             </div>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-[50px] h-[50px] mr-3">
-                <img src="../../src/assets/How Mobionizer/IT Empowerment.png" alt="it-empowerment" strokeWidth={1.5} stroke="currentColor" className="w-[40px] h-[40px] mx-auto" />
+                <img src={Empowerment} alt="it-empowerment" strokeWidth={1.5} stroke="currentColor" className="w-[40px] h-[40px] mx-auto" />
               </div>
               <div>
                 <h3 className="text-[18px] font-semibold">IT Empowerment</h3>
@@ -91,7 +102,7 @@ const Bussiness = () => {
             </div>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-[50px] h-[50px] mr-3">
-                <img src="../../src/assets/How Mobionizer/Comprehensive Reports.png" alt="comprehensive-report" strokeWidth={1.5} stroke="currentColor" className="w-[40px] h-[40px] mx-auto" />
+                <img src={Reports} alt="comprehensive-report" strokeWidth={1.5} stroke="currentColor" className="w-[40px] h-[40px] mx-auto" />
               </div>
               <div>
                 <h3 className="text-[18px] font-semibold">Comprehensive Reports</h3>
@@ -121,8 +132,8 @@ const Bussiness = () => {
                 <input type="text" name="message" value={data.message} onChange={handleChange} className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Company" required />
               </div>
               <div className="text-center">
-                <button type="submit" className="bg-[#F26A25] text-white font-bold py-3 px-16 mt-2 rounded-3xl hover:bg-[#e65811] transition duration-300">
-                  Submit
+                <button disabled={loadding} type="submit" className="bg-[#F26A25] text-white font-bold py-3 px-16 mt-2 rounded-3xl hover:bg-[#e65811] transition duration-300">
+                  {loadding ? "Submitting...." : "Submit"}
                 </button>
               </div>
             </form>

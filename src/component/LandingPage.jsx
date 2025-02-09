@@ -1,9 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
+import logo from "../assets/logo/logo-01.png"
+import bg from "../assets/Top Banner/t-banner-01.png"
 
 const LandingPage = () => {
   return (
-    <div className="relative h-screen w-screen overflow-hidden bg-cover bg-center md:px-16 px-6" style={{ backgroundImage: "url('../../src/assets/Top Banner/t-banner-01.png')" }}>
+    <div className="relative h-screen w-screen overflow-hidden bg-cover bg-center md:px-16 px-6" style={{ backgroundImage:`url(${bg})` }}>
 
       {/* <div className=" inset-0 bg-cover bg-center sm:pt-20" style={{ backgroundImage: "url('../../src/assets/Top Banner/t-banner-01.png')" }}>
         <div className="absolute inset-0 bg-[#4A2DBF]/70"></div>
@@ -13,7 +15,7 @@ const LandingPage = () => {
         <div className="container">
           {/* Logo */}
           <div className="mb-8">
-            <img src="../../src/assets/logo/logo-01.png" alt="Mobionizer Logo" className="h-16" />
+            <img src={logo} alt="Mobionizer Logo" className="h-16" />
           </div>
           <h2 className="text-white mb-2">MOBIONIZER</h2>
           {/* Title & Subtitle */}

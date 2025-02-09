@@ -1,11 +1,11 @@
 import React from "react";
-import trackMonitor from '../../src/assets/Why choose Mobionizer/track & monitor.png';
-import safeGuard from '../../src/assets/Why choose Mobionizer/safeguards.png';
-import remotelyManage from '../../src/assets/Why choose Mobionizer/remotely manage.png';
-import employeeAccountability from '../../src/assets/Why choose Mobionizer/employee accountability.png';
-import facilitatesSeamless from '../../src/assets/Why choose Mobionizer/facilitates seamless.png';
+import trackMonitor from '../assets/Why_Choose_Mobionizer/trackmonitor.png';
+import safeGuard from '../assets/Why_Choose_Mobionizer/safeguards.png';
+import remotelyManage from '../assets/Why_Choose_Mobionizer/remotelymanage.png';
+import employeeAccountability from '../assets/Why_Choose_Mobionizer/employeeaccountability.png';
+import facilitatesSeamless from '../assets/Why_Choose_Mobionizer/facilitatesseamless.png';
 
-const chooseMobionizer = () => {
+const ChooseMobionizer = () => {
     return (
         <div className="flex items-start md:items-center justify-center text-black font-sans mt-10 md:mt-28 mb-11 md:px-16 px-6">
             <div className="container">
@@ -68,4 +68,4 @@ const chooseMobionizer = () => {
         </div>
     )
 }
-export default chooseMobionizer;
+export default ChooseMobionizer;
